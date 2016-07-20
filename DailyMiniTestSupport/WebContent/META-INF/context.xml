@@ -12,8 +12,8 @@
               auth="Container"
               type="javax.sql.DataSource"
               driverClassName="oracle.jdbc.driver.OracleDriver"
-              url="jdbc:oracle:thin:@52.196.236.143:1521/xe"
-              username="idetsu"
-              password="idetsu" />
+              url="jdbc:oracle:thin:@***.***.***.***:1521/xe"
+              username="******"
+              password="******" />
 
 </Context>
