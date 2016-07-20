@@ -1,0 +1,2 @@
+# DailyMiniTestSupport
+新人研修で使う日々のミニテストを支援するシステムです。
