@@ -1,6 +1,8 @@
 # DailyMiniTestSupport
 新人研修で使う日々のミニテストを支援するシステムです。
 
+## ドキュメント
+
 ドキュメント類は以下の場所に格納しています。
 
 DailyMiniTestSupport/DailyMiniTestSupport/doc/
@@ -13,3 +15,9 @@ DailyMiniTestSupport/DailyMiniTestSupport/doc/
 * 日直テスト画面遷移図.asta
 * 日直テスト概念モデル.asta
 * 日直小テストデータモデル.asta
+
+## 実行環境
+
+* Tomcat 8
+* Java8
+* Orale11g XE
