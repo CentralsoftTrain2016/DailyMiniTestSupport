@@ -19,24 +19,27 @@ import java.util.Map;
 	        l4.exec();
 	    }
 
+
 	    //------------------------------------
-	    private final MenuItem END          = new EndMenuItem("END");
-	    private final MenuItem REGIST       = new RegistMenuItem("REGIST");
-	    private final MenuItem LISTOUT      = new ListOutMenuItem("LISTOUT");
-	    private final MenuItem SEARCH       = new SearchMenuItem("SEARCH");
-	    private final HashMap<Integer, MenuItem> menuItemMap
+	    private static final MenuItem END          = new EndMenuItem("END");
+	    private static final MenuItem REGIST       = new RegistMenuItem("REGIST");
+	    private static final MenuItem LISTOUT      = new ListOutMenuItem("LISTOUT");
+	    private static final MenuItem SEARCH       = new SearchMenuItem("SEARCH");
+	    private static final HashMap<Integer, MenuItem> menuItemMap
 	                                        = new HashMap<Integer, MenuItem>();
 	    private HashMap<Integer, Kaiinn> kaiinDB
 	                                        = new HashMap<Integer, Kaiinn>();;
-
-	    //------------------------------------
-	    public Level4()
-	    {
+	    static {
 	        //メニュー番号ごとのメニューアイテムを登録する
 	        menuItemMap.put( 1, END     );
 	        menuItemMap.put( 2, REGIST  );
 	        menuItemMap.put( 3, LISTOUT );
 	        menuItemMap.put( 4, SEARCH  );
+	    }
+	    //------------------------------------
+	    public Level4()
+	    {
+
 	    }
 
 	    //------------------------------------
