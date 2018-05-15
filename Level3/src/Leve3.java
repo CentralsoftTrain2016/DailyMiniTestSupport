@@ -92,6 +92,8 @@ function main()
 */
 public class Leve3
 {
+
+
 	private static final Gogyo gogyos[] =
 		{
             new Gogyo("庚", "かのえ" ),
