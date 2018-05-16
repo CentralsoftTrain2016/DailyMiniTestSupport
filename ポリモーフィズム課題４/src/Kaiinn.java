@@ -16,6 +16,13 @@ public	class Kaiinn
       this.name       = name;       //名前
       this.registDate = new Date(); //登録日時
   }
+  //コンストラクタ　(new 演算子実行時に呼ばれる)
+  public Kaiinn( int kaiinNo, String  name, Date d  )
+  {
+      this.kaiinNo    = kaiinNo;        //会員番号
+      this.name       = name;       //名前
+      this.registDate = d; //登録日時
+  }
 
   public int getKaiinNo() {
 	return kaiinNo;
@@ -38,4 +45,6 @@ public	class Kaiinn
           + ", 登録日時：" + this.registDate.toString()
       );
   }
+
+
 }
