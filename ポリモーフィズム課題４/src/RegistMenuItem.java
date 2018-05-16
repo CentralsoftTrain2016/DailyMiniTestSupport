@@ -21,11 +21,12 @@ public class RegistMenuItem extends MenuItem
     try
     {
 		this.kaiinnMgr.put(k);
+	     ConsoleUtil.print("登録が完了しました。:" + k.toString());
 	}
     catch (ExistException e)
     {
-    	ConsoleUtil.print("ご指定のIDはすでに使われています。");
+    	ConsoleUtil.print("ご指定のID:" + id + "はすでに使われています。");
     }
-      ConsoleUtil.print("登録が完了しました。:" + k.toString());
+
   }
 }
