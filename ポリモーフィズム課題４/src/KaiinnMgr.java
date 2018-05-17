@@ -65,7 +65,7 @@ public class KaiinnMgr extends Dao
 	{
 		Kaiinn k = null;
 		try(
-				PreparedStatement	stmt = con.prepareStatement(GET_SQL);
+			PreparedStatement	stmt = con.prepareStatement(GET_SQL);
 			)
 		{
 			/* Statementの作成 */
