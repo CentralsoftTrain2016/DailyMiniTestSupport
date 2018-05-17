@@ -1,3 +1,5 @@
+package jp.co.central_soft.train2018.dao;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;

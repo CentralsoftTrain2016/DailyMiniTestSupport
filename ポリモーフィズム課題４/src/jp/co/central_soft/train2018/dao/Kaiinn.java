@@ -1,3 +1,4 @@
+package jp.co.central_soft.train2018.dao;
 
 import java.util.Date;
 

@@ -1,3 +1,4 @@
+package jp.co.central_soft.train2018.util;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,7 +7,7 @@ import java.io.InputStreamReader;
 public class ConsoleUtil
 {
     //------------------------------------
-    protected static void print( String str )
+    public static void print( String str )
     {
         System.out.println(str);
     }

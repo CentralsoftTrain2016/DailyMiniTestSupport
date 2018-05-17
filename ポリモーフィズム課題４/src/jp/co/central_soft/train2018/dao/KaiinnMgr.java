@@ -1,3 +1,5 @@
+package jp.co.central_soft.train2018.dao;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -6,10 +8,30 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+
+
 //---------------------------------------------
 //会員管理
 public class KaiinnMgr extends Dao
 {
+	public void sample( Kaiinn k )
+	{
+
+		try(
+				Connection con = Dao.getConnection();
+				PreparedStatement	stmt = con.prepareStatement(PUT_SQL);
+			)
+		{
+			//--------------------
+		}
+		catch( ClassNotFoundException | SQLException e )
+		{
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
+	}
+
+
 	private static final String PUT_SQL =
 			"INSERT INTO kaiinn " +
 			"( " +
