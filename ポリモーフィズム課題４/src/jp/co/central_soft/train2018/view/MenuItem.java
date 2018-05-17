@@ -22,7 +22,6 @@ public abstract class MenuItem
         menuItemMap.put( 4, SEARCH  );
     }
 
-
   private String name;
   protected KaiinnMgr kaiinnMgr= new KaiinnMgr();
 
@@ -31,7 +30,8 @@ public abstract class MenuItem
       super();
       this.name = name;
   }
-  public String getName() {
+  public String getName()
+  {
       return name;
   }
 

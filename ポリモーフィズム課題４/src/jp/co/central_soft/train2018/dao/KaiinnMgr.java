@@ -12,7 +12,7 @@ import java.util.List;
 
 //---------------------------------------------
 //会員管理
-public class KaiinnMgr extends Dao
+public class KaiinnMgr
 {
 	public void sample( Kaiinn k )
 	{
@@ -71,7 +71,7 @@ public class KaiinnMgr extends Dao
 			/* Statementの作成 */
 			stmt.setInt(	1, k.getKaiinNo() 	);
 			stmt.setString(	2, k.getName()		);
-			stmt.setDate(	3, convertToSqlDate(k.getRegistDate()));
+			stmt.setDate(	3, Dao.convertToSqlDate(k.getRegistDate()));
 
 			/* ｓｑｌ実行 */
 			int numCount = stmt.executeUpdate();
@@ -86,9 +86,10 @@ public class KaiinnMgr extends Dao
 	private Kaiinn get(int kaiinNo, Connection con)
 	{
 		Kaiinn k = null;
-		try(
+		try
+		(
 			PreparedStatement	stmt = con.prepareStatement(GET_SQL);
-			)
+		)
 		{
 			/* Statementの作成 */
 			stmt.setInt(	1, kaiinNo 	);
